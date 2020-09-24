@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Yummy Food</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+   <nav class="navbar navbar-expand-sm fixed-top" style="padding:0; margin:0; background-color: inherit">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+                collapse
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding:0; margin:0;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurants.html">Restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grocery.html">Groceries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="container-fluid min-height-full width-full white" style="padding: 100px;">
+    <h1>Wang's Dim Sum</h1>
+    <hr>
+    <p>Wang's Dim Sum is a family owned Dim Sum restaurant founded in 1987 in Beverly Hills, California. Chef and owner Jim Wang has been cooking since he was a young boy growing up in West Covina, California. Wang and his restaurant have been hit hard by COVID-19, and the reduction of customers means he might need to close down due to the high rent in Beverly Hills. Support him by ordering food through us!</p>
+    <br>
+    <h2>Starters & Sides</h2>
+    <hr>
+    <div class="row" style="justify-content: space-evenly">
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Banana.jpg">
+        <h5>Bananas</h5>
+        <p><i>200 cal | $1.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Orange.jpg">
+        <h5>Oranges</h5>
+        <p><i>200 cal | $1.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Apple.jpg">
+        <h5>Apples</h5>
+        <p><i>200 cal | $1.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <h2>Entrées</h2>
+    <hr>
+    <div class="row" style="justify-content: space-evenly">
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Food3.jpg">
+        <h5>Salmon</h5>
+        <p><i>800 cal | $7.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Food2.jpg">
+        <h5>Egg Salad</h5>
+        <p><i>500 cal | $6.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Food1.jpg">
+        <h5>Fruit Salad</h5>
+        <p><i>300 cal | $4.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <h2>Desserts</h2>
+    <hr>
+    <div class="row" style="justify-content: space-evenly">
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Banana.jpg">
+        <h5>Bananas</h5>
+        <p><i>200 cal | $1.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Orange.jpg">
+        <h5>Oranges</h5>
+        <p><i>200 cal | $1.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Apple.jpg">
+        <h5>Apples</h5>
+        <p><i>200 cal | $1.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <h2>Drinks</h2>
+    <hr>
+    <div class="row" style="justify-content: space-evenly">
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Banana.jpg">
+        <h5>Bananas</h5>
+        <p><i>200 cal | $1.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Orange.jpg">
+        <h5>Oranges</h5>
+        <p><i>200 cal | $1.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-sm-3 food-bubble">
+        <img src="images/Apple.jpg">
+        <h5>Apples</h5>
+        <p><i>200 cal | $1.99</i></p>
+        <form class="add-to-cart" id="my-form">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="500">
+          <button class="cart-btn" type="submit" onclick="demobuy(event)">Add to cart</button>
+        </form>
+      </div>
+    </div>
+    <br>
+
+  </div>
+
+  </body>
+</html>
+      

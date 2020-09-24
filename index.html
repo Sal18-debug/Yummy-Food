@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Yummy Food</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm fixed-top" style="padding:0; margin:0; background-color: inherit">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+                collapse
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding:0; margin:0;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurants.html">Restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grocery.html">Groceries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid full-height">
+      <div class="row" style="min-height: 100%">
+        <div class="col-sm-6" style="min-height: 100%; display: flex; align-items: center; justify-content: center; padding-left: 15%">
+          <div style="flex: 1">
+              <h1>Yummy Food</h1>
+              <div style="max-width: 300px; overflow-wrap: normal">
+                <p>We support local restaurants, grocery stores and help provide free food during the COVID-19 Pandemic</p>
+              </div>
+            <button class="black-button" id="learnmore"><b>Learn More</b></button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid full-height" style="background-color: black; color: #fff7f9" id="lrnmr">
+      <div style="display: flex; width:100%; height: 100%; align-items: center; justify-content: space-around; flex-wrap: wrap">
+        <div style="display: flex; flex:1; width: 100%; padding: 5px; justify-content: center">
+          <div style="flex: 1; max-width: 250px; overflow-wrap: normal; text-align: center">
+            <h3>Restaurants</h3>
+            <p>Explore a wide variety of local restaurants near you, and support them by ordering a meal!</p>
+            <button class="pink-button" onclick="location.href='restaurants.html'" type="button"><b>Order Now</b></button>
+          </div>
+        </div>
+        <div style="display: flex; flex:1; width: 100%; padding: 5px; justify-content: center">
+          <div style="flex: 1; max-width: 250px; overflow-wrap: normal; text-align: center">
+            <h3>Groceries</h3>
+            <p>Buy your groceries and home essentials from family owned shops through our website!</p>
+            <button class="pink-button" onclick="location.href='grocery.html'" type="button"><b>Order Now</b></button>
+          </div>
+        </div>
+        <div style="display: flex; flex:1; width: 100%; padding: 5px; justify-content: center">
+          <div style="flex: 1; max-width: 250px; overflow-wrap: normal; text-align: center">
+            <h3>Donations</h3>
+            <p>Have extra produce, clothing, or household supplies? Find your local food bank or charity and donate today!</p>
+            <button class="pink-button" onclick="location.href='donate.html'" type="button"><b>Donate</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  $("#learnmore").on('click', function (event) {
+        event.preventDefault();
+
+        setTimeout(
+            function () {
+                var element = document.getElementById("lrnmr");
+
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+            , 300);
+    });
+</script>
