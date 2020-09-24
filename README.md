@@ -56,7 +56,7 @@ Products for Groceries
 As for groceries, these items will be more appealing to restaurants and other foodservice organizations/businesses. These items will be delivered in specialized boxes similar to warehouse storage boxes. Boxes of different fruits, vegetables, grains, spices, and other specialized food items will be priced at different levels depending on their conduct. Pricing will range from $20 for low weight items to up to $100 for larger packages.
 All of these items purchased online will be delivered through contactor drivers such as UberEats/Doordash that will deliver meals to consumers and businesses.
 
-Food Donation Plan
+Food Donation Plan and other items
 ---------------------------------
 
 To help eliminate food waste and wasted inventory, we can offer donation services for specific food items in danger of being left to waste. For people with little to no income, certain dates will be marked on the store’s calendar offering several food items products at no cost for certain groups of people such as the homeless and those with special needs such as physical or mental ailments. Such events will be advertised on the website and in local flyers and advertisements to help those in need of such services. Items would be marked and be placed outside the warehouse to be picked up or delivered to certain locations for efficient use of such products. By offering such services, Yummy Foods makes ourselves distinct in the current market competition.
